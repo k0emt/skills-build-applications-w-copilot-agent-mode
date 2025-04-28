@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-&=^bd4-#q$zs1$o&mun1k2br#8ejxato3vjst*@k@w$!ycizun
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'super-trout-x5rr79pxwqfv799-8000.app.github.dev']
 
 
 # Application definition
@@ -74,8 +74,6 @@ CORS_ALLOW_HEADERS = [
     'authorization',
     'x-csrftoken',
 ]
-
-ALLOWED_HOSTS = ['*']
 
 DATABASES = {
     'default': {
@@ -143,3 +141,5 @@ TEMPLATES = [
         },
     },
 ]
+
+ROOT_URLCONF = 'octofit_tracker.urls'
